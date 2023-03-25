@@ -1,9 +1,4 @@
-package ua.lviv.iot.algo.part1.lab1;
-
-import ua.lviv.iot.algo.part1.lab1.Building.SportComplex;
-import ua.lviv.iot.algo.part1.lab1.Building.SportComplexManager;
-import ua.lviv.iot.algo.part1.lab1.Building.Stadium;
-import ua.lviv.iot.algo.part1.lab1.Building.SwimmingPool;
+package ua.lviv.iot.algo.part1.lab1.Building;
 
 import java.util.Arrays;
 import java.util.List;
