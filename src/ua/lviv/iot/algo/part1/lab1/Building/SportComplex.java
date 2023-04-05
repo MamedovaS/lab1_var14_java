@@ -26,5 +26,5 @@ public abstract class SportComplex {
         this.id = id;
     }
 
-    public abstract String getSupportedSports();
+    protected abstract String getSupportedSports();
 }

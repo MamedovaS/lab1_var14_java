@@ -15,14 +15,16 @@ public class SportComplexManager {
     }
 
     public List<SportComplex> findStadiumByFreeSit(final int count) {
-        return sportComplexList.stream()
+        return sportComplexList
+                .stream()
                 .filter(sportComplex -> sportComplex instanceof Stadium)
                 .filter(sportComplex -> ((Stadium) sportComplex).isThereFreeSits(count))
                 .collect(Collectors.toList());
     }
 
     public List<SportComplex> findStadiumByTeam(String currentTeam) {
-        return sportComplexList.stream()
+        return sportComplexList
+                .stream()
                 .filter(sportComplex -> sportComplex instanceof Stadium)
                 .filter(stadiumWithFreeSits ->
                         ((Stadium) stadiumWithFreeSits).getHomeTeam().equals(currentTeam) || ((Stadium) stadiumWithFreeSits).getAwayTeam().equals(currentTeam))
