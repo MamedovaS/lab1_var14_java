@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.46.0" timestamp="2023-04-08T14:33:44.184">
+<file name="C:\Users\S_N_V\IdeaProjects\JavaLabsGit\lab1_var14_java\src\main\java\ua\lviv\iot\algo\part1\Building\SportComplex.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="16" rule="UnnecessaryImport" ruleset="Code Style" package="ua.lviv.iot.algo.part1.Building" class="SportComplex" externalInfoUrl="https://pmd.github.io/pmd-6.46.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'lombok.*'
+</violation>
+</file>
+<file name="C:\Users\S_N_V\IdeaProjects\JavaLabsGit\lab1_var14_java\src\main\java\ua\lviv\iot\algo\part1\Building\SportComplexManager.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="24" rule="UnnecessaryImport" ruleset="Code Style" package="ua.lviv.iot.algo.part1.Building" class="SportComplexManager" externalInfoUrl="https://pmd.github.io/pmd-6.46.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'org.junit.Before'
+</violation>
+</file>
+<file name="C:\Users\S_N_V\IdeaProjects\JavaLabsGit\lab1_var14_java\src\main\java\ua\lviv\iot\algo\part1\Building\Stadium.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="16" rule="UnnecessaryImport" ruleset="Code Style" package="ua.lviv.iot.algo.part1.Building" class="Stadium" externalInfoUrl="https://pmd.github.io/pmd-6.46.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'lombok.*'
+</violation>
+</file>
+<file name="C:\Users\S_N_V\IdeaProjects\JavaLabsGit\lab1_var14_java\src\main\java\ua\lviv\iot\algo\part1\Building\SwimmingPool.java">
+<violation beginline="5" endline="5" begincolumn="13" endcolumn="29" rule="UnusedPrivateField" ruleset="Best Practices" package="ua.lviv.iot.algo.part1.Building" class="SwimmingPool" variable="amountOfBathrooms" externalInfoUrl="https://pmd.github.io/pmd-6.46.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'amountOfBathrooms'.
+</violation>
+<violation beginline="6" endline="6" begincolumn="16" endcolumn="27" rule="UnusedPrivateField" ruleset="Best Practices" package="ua.lviv.iot.algo.part1.Building" class="SwimmingPool" variable="volumeOfPool" externalInfoUrl="https://pmd.github.io/pmd-6.46.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'volumeOfPool'.
+</violation>
+<violation beginline="7" endline="7" begincolumn="13" endcolumn="27" rule="UnusedPrivateField" ruleset="Best Practices" package="ua.lviv.iot.algo.part1.Building" class="SwimmingPool" variable="maxParticipants" externalInfoUrl="https://pmd.github.io/pmd-6.46.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'maxParticipants'.
+</violation>
+</file>
+</pmd>
