@@ -2,8 +2,6 @@ package ua.lviv.iot.algo.part1.Building;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ua.lviv.iot.algo.part1.Building.SportComplex;
-import ua.lviv.iot.algo.part1.Building.Stadium;
 
 public class StadiumTest {
     public static final int ATTENDIES_GROUP_COUNT = 100;
