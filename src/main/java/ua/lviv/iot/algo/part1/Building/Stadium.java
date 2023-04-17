@@ -2,6 +2,8 @@ package ua.lviv.iot.algo.part1.Building;
 
 import lombok.*;
 
+import java.lang.reflect.Field;
+
 @Setter
 @Getter
 
@@ -56,6 +58,14 @@ public class Stadium extends SportComplex {
     @Override
     public String getSupportedSports() {
         return "Football";
+    }
+
+    public String getHeaders(){
+        return super.getHeaders();
+    }
+
+    public String toCSV(){
+        return super.toCSV();
     }
 }
 

@@ -18,12 +18,12 @@ public abstract class SportComplex {
     private String homeTeam;
     private String awayTeam;
 
-    public SportComplex(String name, int id, int currentAttendance, String homeTeam,String awayTeam ) {
+    public SportComplex(String name, int id, int currentAttendance, String homeTeam, String awayTeam) {
         this.name = name;
         this.id = id;
-        this.currentAttendance=currentAttendance;
-        this.homeTeam=homeTeam;
-        this.awayTeam=awayTeam;
+        this.currentAttendance = currentAttendance;
+        this.homeTeam = homeTeam;
+        this.awayTeam = awayTeam;
     }
 
     public SportComplex(String name, int currentAttendance, int id) {
@@ -33,4 +33,13 @@ public abstract class SportComplex {
     }
 
     protected abstract String getSupportedSports();
+
+    public String getHeaders(){
+        return "id, name, capacity, currentAttendance, freeSits, homeTeam, awayTeam";
+    }
+
+    public String toCSV(){
+        return getId()+getName()+", "+getCapacity()+", "+getCurrentAttendance()+", "+getFreeSits()+", "+getHomeTeam()+", "+getAwayTeam();
+    }
+
 }

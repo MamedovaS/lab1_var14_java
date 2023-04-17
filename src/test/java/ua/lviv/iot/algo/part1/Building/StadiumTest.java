@@ -6,52 +6,57 @@ import org.junit.Test;
 public class StadiumTest {
     public static final int ATTENDIES_GROUP_COUNT = 100;
 
-    private Stadium testObj = new Stadium(123, "zxc", "vbn", "mnb", 600);
+    private Stadium stadium = new Stadium(123, "zxc", "vbn", "mnb", 600);
 
     @Test
     public void shouldCheckIfThereFreeSitsAndReturnTrue() {
-        testObj.isThereFreeSits(5);
+        stadium.isThereFreeSits(5);
 
-        Assert.assertTrue(testObj.isThereFreeSits(5));
+        Assert.assertTrue(stadium.isThereFreeSits(5));
     }
 
     @Test
     public void shouldCheckIfThereFreeSitsAndReturnFalse() {
-        testObj.isThereFreeSits(601);
+        stadium.isThereFreeSits(601);
 
-        Assert.assertFalse(testObj.isThereFreeSits(601));
+        Assert.assertFalse(stadium.isThereFreeSits(601));
     }
 
     @Test
     public void shouldAddAttendies() {
-        testObj.addAttendies(5);
+        stadium.addAttendies(5);
 
-        Assert.assertTrue(testObj.getCurrentAttendance() <= testObj.getCapacity());
+        Assert.assertTrue(stadium.getCurrentAttendance() <= stadium.getCapacity());
     }
 
     @Test
     public void shouldDecreaseAttendance() {
-        testObj.decreaseAttendance();
+        stadium.decreaseAttendance();
 
-        Assert.assertTrue(testObj.getCurrentAttendance() >= 0);
+        Assert.assertTrue(stadium.getCurrentAttendance() >= 0);
     }
 
     @Test
     public void shouldChangeHomeTeam() {
-        testObj.changeHomeTeam("zxc");
+        stadium.changeHomeTeam("zxc");
 
-        Assert.assertEquals(testObj.getHomeTeam(), "zxc");
+        Assert.assertEquals(stadium.getHomeTeam(), "zxc");
     }
 
     @Test
     public void shouldChangeAwayTeam() {
-        testObj.changeAwayTeam("asd");
+        stadium.changeAwayTeam("asd");
 
-        Assert.assertEquals(testObj.getAwayTeam(), "asd");
+        Assert.assertEquals(stadium.getAwayTeam(), "asd");
     }
 
     @Test
     public void shouldReturnSupportedSports() {
-        Assert.assertEquals(testObj.getSupportedSports(), "Football");
+        Assert.assertEquals(stadium.getSupportedSports(), "Football");
+    }
+
+    @Test
+    public void shouldGetHeaders(){
+
     }
 }
