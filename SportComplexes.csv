@@ -1,0 +1,6 @@
+id, name, capacity, currentAttendance, freeSits, homeTeam, awayTeam
+321hjk, 600, 551, 600, asd, gfd
+id, name, capacity, currentAttendance, freeSits, homeTeam, awayTeam
+123mnb, 600, 600, 600, zxc, vbn
+id, name, capacity, currentAttendance, freeSits, homeTeam, awayTeam, amountOfBathrooms, volumeOfPool, maxParticipants
+404null, 600, 0, 600, null, null, 0, 0, 0.0

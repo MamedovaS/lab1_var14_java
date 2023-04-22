@@ -34,12 +34,12 @@ public abstract class SportComplex {
 
     protected abstract String getSupportedSports();
 
-    public String getHeaders(){
+    public String getHeaders() {
         return "id, name, capacity, currentAttendance, freeSits, homeTeam, awayTeam";
     }
 
-    public String toCSV(){
-        return getId()+getName()+", "+getCapacity()+", "+getCurrentAttendance()+", "+getFreeSits()+", "+getHomeTeam()+", "+getAwayTeam();
+    public String toCSV() {
+        return getId() + getName() + ", " + getCapacity() + ", " + getCurrentAttendance() + ", " + getFreeSits() + ", " + getHomeTeam() + ", " + getAwayTeam();
     }
 
 }

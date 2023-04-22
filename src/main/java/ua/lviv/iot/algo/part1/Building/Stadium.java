@@ -25,7 +25,7 @@ public class Stadium extends SportComplex {
     }
 
     public boolean isThereFreeSits(int count) {
-        return getFreeSits()> count;
+        return getFreeSits() > count;
     }
 
     public int addAttendies(int count) {
@@ -60,11 +60,11 @@ public class Stadium extends SportComplex {
         return "Football";
     }
 
-    public String getHeaders(){
+    public String getHeaders() {
         return super.getHeaders();
     }
 
-    public String toCSV(){
+    public String toCSV() {
         return super.toCSV();
     }
 }

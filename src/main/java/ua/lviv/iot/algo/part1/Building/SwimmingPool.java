@@ -1,5 +1,8 @@
 package ua.lviv.iot.algo.part1.Building;
-import lombok.*;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Setter
 @Getter
@@ -15,4 +18,14 @@ public class SwimmingPool extends SportComplex {
     public String getSupportedSports() {
         return "Swim";
     }
+
+
+    public String getHeaders() {
+        return super.getHeaders() + ", amountOfBathrooms, volumeOfPool, maxParticipants";
+    }
+
+    public String toCSV() {
+        return super.toCSV() + ", " + getAmountOfBathrooms() + ", " + getMaxParticipants() + ", " + getVolumeOfPool();
+    }
+
 }
