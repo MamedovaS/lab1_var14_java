@@ -2,21 +2,19 @@ package ua.lviv.iot.algo.part1.Building;
 
 import lombok.*;
 
+import java.lang.reflect.Field;
+
 @Setter
 @Getter
 
 public class Stadium extends SportComplex {
-    private String homeTeam;
-    private String awayTeam;
+
     private static Stadium instance = new Stadium();
 
     public static final int ATTENDIES_GROUP_COUNT = 100;
 
-    public Stadium(int id, String homeTeam, String awayTeam, String name,int currentAttendance) {
-        super(name, id, currentAttendance);
-        this.homeTeam = homeTeam;
-        this.awayTeam = awayTeam;
-
+    public Stadium(int id, String homeTeam, String awayTeam, String name, int currentAttendance) {
+        super(name, id, currentAttendance, homeTeam, awayTeam);
     }
 
     public Stadium() {
@@ -27,7 +25,7 @@ public class Stadium extends SportComplex {
     }
 
     public boolean isThereFreeSits(int count) {
-        return getCapacity() - getCurrentAttendance() > count;
+        return getFreeSits() > count;
     }
 
     public int addAttendies(int count) {
@@ -60,6 +58,14 @@ public class Stadium extends SportComplex {
     @Override
     public String getSupportedSports() {
         return "Football";
+    }
+
+    public String getHeaders() {
+        return super.getHeaders();
+    }
+
+    public String toCSV() {
+        return super.toCSV();
     }
 }
 
